@@ -4,6 +4,8 @@ import love from "../assets/love.avif"
 
 
 const Question = () => {
+  
+
 const navigate = useNavigate();
  const [noButtonPosition,setNoButtonPosition] = useState({top:"50%",left:"50%"})
 
@@ -31,6 +33,8 @@ const navigate = useNavigate();
           className="px-6 py-3 font-medium text-white bg-red-500 rounded-lg absolute"
           style={{ top: noButtonPosition.top, left: noButtonPosition.left }}
           onMouseEnter={moveNoButton}
+          onTouchStart={moveNoButton} 
+
         >
           NO
         </button>
